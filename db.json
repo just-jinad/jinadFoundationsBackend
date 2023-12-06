@@ -1,0 +1,16 @@
+{
+    "blogs":[
+        {
+            "tittle": "flying in the snake shadow",
+            "author":"isaac",
+            "id": 1
+        },
+
+        {
+            "tittle": "flying in the monkey king shadow",
+            "author":"Jinad",
+            "id": 2
+        }
+
+    ]
+}
