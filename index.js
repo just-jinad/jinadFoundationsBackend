@@ -28,6 +28,15 @@ app.get('/api/blogs', (req, res) => {
     res.json(data.blogs);
   });
 
+  app.get('/api/blogs/:id', (req, res) => {
+    const filePath = path.join(__dirname, 'db.json');
+    const rawData = fs.readFileSync(filePath);
+    const data = JSON.parse(rawData);
+  
+    res.json(data.blogs);
+  });
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json()) 

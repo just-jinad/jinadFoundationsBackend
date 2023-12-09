@@ -1,15 +1,29 @@
 {
     "blogs":[
         {
-            "tittle": "flying in the snake shadow",
+            "title": "flying in the snake shadow  Lorem ipsum dolor, sit amet consectetur adipisicing eligt. Debitis, quas in tenetur laboriosam veniam, ipsa a facilis libero maiores corporis eveniet, cupiditate reprehenderit! Cupiditate ac." ,
             "author":"isaac",
             "id": 1
         },
-
         {
-            "tittle": "flying in the monkey king shadow",
-            "author":"Jinad",
+            "title": "flying in the snake shadow  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, quas in tenetur laboriosam veniam, ipsa a facilis libero maiores corporis eveniet, cupiditate reprehenderit! Cupiditate ac." ,
+            "author":"isaac",
             "id": 2
+        },
+        {
+            "title": "flying in the snake shadow  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, quas in tenetur laboriosam veniam, ipsa a facilis libero maiores corporis eveniet, cupiditate reprehenderit! Cupiditate ac." ,
+            "author":"isaac",
+            "id": 3
+        },
+        {
+            "title": "flying in the snake shadow  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, quas in tenetur laboriosam veniam, ipsa a facilis libero maiores corporis eveniet, cupiditate reprehenderit! Cupiditate ac." ,
+            "author":"isaac",
+            "id": 4
+        },
+        {
+            "title": "flying in the monkey king shadow",
+            "author":"Jinad",
+            "id": 5
         }
 
     ]
