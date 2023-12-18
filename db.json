@@ -296,18 +296,6 @@
       ],
       "engagement_level": "High",
       "image": "https://example.com/math_adventures.jpg"
-    },
-    {
-      "id": 12,
-      "title": "Story time with grandma",
-      "body": "it all happened a long time ago in a faraway land called ushi",
-      "author": "black pen"
-    },
-    {
-      "id": 13,
-      "title": "Story time with grandma",
-      "body": "it all happened a long time ago in a faraway land called ushi",
-      "author": "black pen"
     }
   ]
 }

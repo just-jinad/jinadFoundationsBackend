@@ -28,14 +28,13 @@ app.get('/api/blogs', (req, res) => {
     const filePath = path.join(__dirname, 'db.json');
     const rawData = fs.readFileSync(filePath);
     const data = JSON.parse(rawData);
-    console.log(data);
     res.json(data.blogs);
   });
 
   
 app.post('/api/blogs', (req, res) => {
   console.log(req.body);
-  const {title, body, author}= req.body
+  const {title, content, author}= req.body
 
   const filePath = path.join(__dirname, 'db.json')
   const rawData = fs.readFileSync(filePath)
@@ -44,7 +43,7 @@ app.post('/api/blogs', (req, res) => {
   const newBlog = {
     id: data.blogs.length +1,
     title,
-    body,
+    content,
     author
   }
 
