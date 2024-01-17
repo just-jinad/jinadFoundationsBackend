@@ -62,6 +62,35 @@ app.post('/api/blogs', (req, res) => {
   });
 
 
+  // ... (existing code)
+
+app.delete('/api/blogs/:id', (req, res) => {
+  console.log(req);
+  const blogIdToDelete = req.params.id;
+
+  const filePath = path.join(__dirname, 'db.json');
+  const rawData = fs.readFileSync(filePath);
+  const data = JSON.parse(rawData);
+
+  // Find the index of the blog with the specified id
+  const indexToDelete = data.blogs.findIndex(blog => blog.id === parseInt(blogIdToDelete));
+
+  if (indexToDelete !== -1) {
+    // Remove the blog from the array
+    data.blogs.splice(indexToDelete, 1);
+
+    // Save the modified data back to the JSON file
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
+    res.status(204).send(); // 204 No Content for successful deletion
+  } else {
+    res.status(404).send('Blog not found');
+  }
+});
+
+// ... (remaining code)
+
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/user", allRoutes)
